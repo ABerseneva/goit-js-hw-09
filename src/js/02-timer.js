@@ -41,7 +41,7 @@ function calculeteDeltaTime() {
   console.log(deltaTime);
 
   return deltaTime;
-};
+}; 
 
 function onClick() {
   refs.startBtn.disabled = true;
