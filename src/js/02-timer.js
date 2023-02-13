@@ -24,8 +24,9 @@ const options = {
        refs.startBtn.disabled = true;
       } else {
       Notiflix.Notify.success('Click "Start"');
-        refs.startBtn.disabled = false;
-      }
+      refs.startBtn.disabled = false;
+    }
+    
   },
 };
 
@@ -45,6 +46,7 @@ function calculeteDeltaTime() {
 
 function onClick() {
   refs.startBtn.disabled = true;
+  refs.input.disabled = true;
   const intervalId = setInterval(() => {
     const deltaTime = calculeteDeltaTime();
     if (deltaTime >= 0) {
@@ -54,6 +56,7 @@ function onClick() {
       Notiflix.Notify.success('Time is up!');
     }
   }, 1000);
+
 };
 
 
